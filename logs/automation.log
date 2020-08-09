@@ -1,0 +1,115 @@
+08/09/20 03:42:55 PM: INFO: *************** Webdriver object is created ***************
+08/09/20 03:42:55 PM: INFO:  Browser is maximised 
+08/09/20 03:42:55 PM: INFO: *************** test_verify_user_can_view_elements_page started ***************
+08/09/20 03:43:20 PM: INFO:  https://demoqa.com opened 
+08/09/20 03:43:21 PM: INFO:  https://demoqa.com/elements opened 
+08/09/20 03:43:21 PM: INFO: *************** test_verify_user_can_view_elements_page finished ***************
+08/09/20 03:43:24 PM: INFO:  Browser is closed 
+08/09/20 03:43:31 PM: INFO: *************** Webdriver object is created ***************
+08/09/20 03:43:33 PM: INFO:  Browser is maximised 
+08/09/20 03:43:33 PM: INFO: *************** test_verify_user_can_view_form_page started ***************
+08/09/20 03:44:14 PM: INFO:  https://demoqa.com opened 
+08/09/20 03:44:14 PM: INFO:  https://demoqa.com/forms opened 
+08/09/20 03:44:14 PM: INFO: *************** test_verify_user_can_view_form_page finished ***************
+08/09/20 03:44:18 PM: INFO:  Browser is closed 
+08/09/20 03:44:26 PM: INFO: *************** Webdriver object is created ***************
+08/09/20 03:44:27 PM: INFO:  Browser is maximised 
+08/09/20 03:45:25 PM: INFO:  Browser is closed 
+08/09/20 03:45:32 PM: INFO: *************** Webdriver object is created ***************
+08/09/20 03:45:33 PM: INFO:  Browser is maximised 
+08/09/20 03:46:04 PM: INFO:  Browser is closed 
+08/09/20 03:46:11 PM: INFO: *************** Webdriver object is created ***************
+08/09/20 03:46:11 PM: INFO:  Browser is maximised 
+08/09/20 03:46:38 PM: INFO:  Browser is closed 
+08/09/20 03:52:53 PM: INFO:  Webdriver object is created 
+08/09/20 03:52:54 PM: INFO:  Browser is maximised 
+08/09/20 03:52:54 PM: INFO: *************** test_verify_user_can_view_elements_page started ***************
+08/09/20 03:53:21 PM: INFO:  https://demoqa.com opened 
+08/09/20 03:53:22 PM: INFO:  https://demoqa.com/elements opened 
+08/09/20 03:53:22 PM: INFO: *************** test_verify_user_can_view_elements_page finished ***************
+08/09/20 03:53:26 PM: INFO:  Browser is closed 
+08/09/20 03:53:33 PM: INFO:  Webdriver object is created 
+08/09/20 03:53:33 PM: INFO:  Browser is maximised 
+08/09/20 03:53:33 PM: INFO: *************** test_verify_user_can_view_form_page started ***************
+08/09/20 03:53:59 PM: INFO:  https://demoqa.com opened 
+08/09/20 03:53:59 PM: INFO:  https://demoqa.com/forms opened 
+08/09/20 03:53:59 PM: INFO: *************** test_verify_user_can_view_form_page finished ***************
+08/09/20 03:54:04 PM: INFO:  Browser is closed 
+08/09/20 03:54:11 PM: INFO:  Webdriver object is created 
+08/09/20 03:54:12 PM: INFO:  Browser is maximised 
+08/09/20 03:54:42 PM: INFO:  Browser is closed 
+08/09/20 03:54:49 PM: INFO:  Webdriver object is created 
+08/09/20 03:54:50 PM: INFO:  Browser is maximised 
+08/09/20 03:55:18 PM: INFO:  Browser is closed 
+08/09/20 03:55:24 PM: INFO:  Webdriver object is created 
+08/09/20 03:55:26 PM: INFO:  Browser is maximised 
+08/09/20 03:56:12 PM: INFO:  Browser is closed 
+08/09/20 03:57:59 PM: INFO:  Fire Fox Web driver object is created 
+08/09/20 03:57:59 PM: INFO:  Browser is maximised 
+08/09/20 03:57:59 PM: INFO: *************** test_verify_user_can_view_elements_page started ***************
+08/09/20 03:58:26 PM: INFO:  https://demoqa.com opened 
+08/09/20 03:58:26 PM: INFO:  https://demoqa.com/elements opened 
+08/09/20 03:58:26 PM: INFO: *************** test_verify_user_can_view_elements_page finished ***************
+08/09/20 03:58:31 PM: INFO:  Browser is closed 
+08/09/20 03:58:38 PM: INFO:  Fire Fox Web driver object is created 
+08/09/20 03:58:39 PM: INFO:  Browser is maximised 
+08/09/20 03:58:39 PM: INFO: *************** test_verify_user_can_view_form_page started ***************
+08/09/20 03:59:06 PM: INFO:  https://demoqa.com opened 
+08/09/20 03:59:07 PM: INFO:  https://demoqa.com/forms opened 
+08/09/20 03:59:07 PM: INFO: *************** test_verify_user_can_view_form_page finished ***************
+08/09/20 03:59:11 PM: INFO:  Browser is closed 
+08/09/20 03:59:19 PM: INFO:  Fire Fox Web driver object is created 
+08/09/20 03:59:19 PM: INFO:  Browser is maximised 
+08/09/20 03:59:48 PM: INFO:  Browser is closed 
+08/09/20 03:59:55 PM: INFO:  Fire Fox Web driver object is created 
+08/09/20 03:59:56 PM: INFO:  Browser is maximised 
+08/09/20 04:01:01 PM: INFO:  Browser is closed 
+08/09/20 04:01:09 PM: INFO:  Fire Fox Web driver object is created 
+08/09/20 04:01:09 PM: INFO:  Browser is maximised 
+08/09/20 04:01:37 PM: INFO:  Browser is closed 
+08/09/20 04:02:53 PM: INFO:  Fire Fox Web driver object is created 
+08/09/20 04:02:53 PM: INFO:  Browser is maximised 
+08/09/20 04:02:53 PM: INFO: *************** test_verify_user_can_view_elements_page started ***************
+08/09/20 04:02:56 PM: INFO:  Fire Fox Web driver object is created 
+08/09/20 04:02:56 PM: INFO:  Browser is maximised 
+08/09/20 04:02:56 PM: INFO: *************** test_verify_user_can_view_form_page started ***************
+08/09/20 04:02:57 PM: INFO:  Fire Fox Web driver object is created 
+08/09/20 04:02:57 PM: INFO:  Browser is maximised 
+08/09/20 04:03:45 PM: INFO:  https://demoqa.com opened 
+08/09/20 04:03:46 PM: INFO:  https://demoqa.com/forms opened 
+08/09/20 04:03:46 PM: INFO: *************** test_verify_user_can_view_form_page finished ***************
+08/09/20 04:03:50 PM: INFO:  Browser is closed 
+08/09/20 04:03:51 PM: INFO:  https://demoqa.com opened 
+08/09/20 04:03:52 PM: INFO:  https://demoqa.com/elements opened 
+08/09/20 04:03:52 PM: INFO: *************** test_verify_user_can_view_elements_page finished ***************
+08/09/20 04:03:55 PM: INFO:  Browser is closed 
+08/09/20 04:03:58 PM: INFO:  Browser is closed 
+08/09/20 04:03:59 PM: INFO:  Fire Fox Web driver object is created 
+08/09/20 04:04:00 PM: INFO:  Browser is maximised 
+08/09/20 04:04:06 PM: INFO:  Fire Fox Web driver object is created 
+08/09/20 04:04:08 PM: INFO:  Browser is maximised 
+08/09/20 04:04:45 PM: INFO:  Browser is closed 
+08/09/20 04:04:45 PM: INFO:  Browser is closed 
+08/09/20 04:10:07 PM: INFO:  Fire Fox Web driver object is created 
+08/09/20 04:10:07 PM: INFO:  Fire Fox Web driver object is created 
+08/09/20 04:10:07 PM: INFO:  Browser is maximised 
+08/09/20 04:10:07 PM: INFO:  Browser is maximised 
+08/09/20 04:10:07 PM: INFO: *************** test_verify_user_can_view_form_page started ***************
+08/09/20 04:10:08 PM: INFO:  Fire Fox Web driver object is created 
+08/09/20 04:10:09 PM: INFO:  Browser is maximised 
+08/09/20 04:10:09 PM: INFO: *************** test_verify_user_can_view_elements_page started ***************
+08/09/20 04:11:19 PM: INFO:  Browser is closed 
+08/09/20 04:11:27 PM: INFO:  https://demoqa.com opened 
+08/09/20 04:11:28 PM: INFO:  https://demoqa.com/elements opened 
+08/09/20 04:11:28 PM: INFO: *************** test_verify_user_can_view_elements_page finished ***************
+08/09/20 04:11:29 PM: INFO:  https://demoqa.com opened 
+08/09/20 04:11:30 PM: INFO:  https://demoqa.com/forms opened 
+08/09/20 04:11:30 PM: INFO: *************** test_verify_user_can_view_form_page finished ***************
+08/09/20 04:11:31 PM: INFO:  Browser is closed 
+08/09/20 04:11:31 PM: INFO:  Browser is closed 
+08/09/20 04:11:39 PM: INFO:  Fire Fox Web driver object is created 
+08/09/20 04:11:39 PM: INFO:  Browser is maximised 
+08/09/20 04:11:40 PM: INFO:  Fire Fox Web driver object is created 
+08/09/20 04:11:40 PM: INFO:  Browser is maximised 
+08/09/20 04:12:32 PM: INFO:  Browser is closed 
+08/09/20 04:12:35 PM: INFO:  Browser is closed 
