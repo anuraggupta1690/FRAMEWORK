@@ -1,7 +1,8 @@
+from lib.configurations.environment_variables import ReadConfigFile
 
 
 class BasePage:
-    def __init__(self, driver, url):
+    def __init__(self, driver, url=ReadConfigFile.get_base_url()):
         self.driver = driver
         self.url = url
 

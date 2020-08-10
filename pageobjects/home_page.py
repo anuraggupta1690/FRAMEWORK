@@ -10,8 +10,8 @@ class HomePage(BasePage):
     widgets_button = "//h5[text()='Widgets']/parent::div/preceding-sibling::div[1]"
     interactions_button = "// h5[text()='Interactions']/parent::div/preceding-sibling::div[1]"
 
-    def __init__(self, driver, url):
-        super().__init__(driver=driver, url=url)
+    def __init__(self, driver):
+        super().__init__(driver=driver)
 
     def get_element_button(self):
         return self.find(By.XPATH, self.element_button)
