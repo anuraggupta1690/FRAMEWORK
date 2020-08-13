@@ -3,8 +3,11 @@ __pycache__
 .idea
 .pytest_cache
 *.log
+logs/automation.log
 *.pyc
 *.exe
 *.md
 *.TAG
 *.html
+reports/assets/
+report.html

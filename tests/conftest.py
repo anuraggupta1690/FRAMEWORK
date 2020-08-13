@@ -1,7 +1,6 @@
 import pytest
-from selenium.webdriver import Firefox
 
-import path
+from base_class.web_driver_instance import WebDriverInstance
 from logger.logger import Logger
 
 log = Logger.create_logger()
@@ -9,10 +8,7 @@ log = Logger.create_logger()
 
 @pytest.fixture()
 def driver_instance(browser):
-    driver = None
-    if browser == "ff":
-        driver = Firefox(executable_path="{}/driver/geckodriver.exe".format(path.get_project_path()))
-        log.info(" Fire Fox Web driver object is created ")
+    driver = WebDriverInstance.get_web_driver_instance(browser)
     driver.maximize_window()
     log.info(" Browser is maximised ")
     yield driver
