@@ -9,6 +9,7 @@ class HomePage(BasePage):
     alert_button = "//h5[text()='Alerts, Frame & Windows']/parent::div/preceding-sibling::div[1]"
     widgets_button = "//h5[text()='Widgets']/parent::div/preceding-sibling::div[1]"
     interactions_button = "// h5[text()='Interactions']/parent::div/preceding-sibling::div[1]"
+    book_store_button = "// h5[text()='Book Store Application']/parent::div/preceding-sibling::div[1]"
 
     def __init__(self, driver):
         super().__init__(driver=driver)
@@ -42,3 +43,9 @@ class HomePage(BasePage):
 
     def click_interactions_button(self):
         self.get_interactions_button().click()
+
+    def get_book_store_button(self):
+        return self.find(By.XPATH, self.book_store_button)
+
+    def click_book_store_button(self):
+        self.get_book_store_button().click()

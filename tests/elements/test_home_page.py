@@ -16,11 +16,10 @@ class TestElements:
     def test_verify_user_can_view_elements_page(self, driver_instance):
         hp = HomePage(driver=driver_instance)
         hp.open_url()
-        web_element_wait(page=hp, condition=wait.ELEMENT_TO_BE_CLICKABLE, locator_type=By.XPATH,
+        web_element_wait(driver=driver_instance, condition=wait.ELEMENT_TO_BE_CLICKABLE, locator_type=By.XPATH,
                          locator=hp.element_button, waiting_for="Element Button")
-
-        # web_condition_wait(page=hp, condition=wait.TITLE_IS, waiting_for="Element Button Page", expected_value="ToolsQA")
-        # web_condition_wait(page=hp, condition=wait.ALERT_IS_PRESENT, waiting_for="Alert")
+        web_condition_wait(driver=driver_instance, condition=wait.TITLE_IS, waiting_for="Correct title",
+                           expected_value='ToolsQA')
 
         hp.click_element_button()
         assert hp.driver.current_url == "{}{}".format(ReadConfigFile.get_base_url(), PageURLs.elements_page), \

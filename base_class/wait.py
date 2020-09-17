@@ -30,22 +30,33 @@ ELEMENT_LOCATED_SELECTION_STATE_TO_BE = 'element_located_selection_state_to_be'
 ALERT_IS_PRESENT = 'alert_is_present'
 
 
+def web_driver_wait(**kwargs):
+    timeout = kwargs.get('timeout', 30)
+    poll_frequency = kwargs.get('sleep_seconds', 0.5)
+    ignored_exceptions = kwargs.get('expected_exceptions', (WebDriverException, UnexpectedAlertPresentException))
+    driver = kwargs.get('driver')
+
+    return WebDriverWait(driver=driver, timeout=timeout, poll_frequency=poll_frequency,
+                         ignored_exceptions=ignored_exceptions)
+
+
 def web_element_wait(**kwargs):
     """
     Function which returns web element
     :param kwargs:
     :return:
     """
-    timeout = kwargs.get('timeout', 30)
-    poll_frequency = kwargs.get('sleep_seconds', 0.5)
-    ignored_exceptions = kwargs.get('expected_exceptions', (WebDriverException, UnexpectedAlertPresentException))
-    waiting_for = kwargs.get("waiting_for", '')
-    page_instance = kwargs.get('page')
     condition = expected_conditions(condition=kwargs.get('condition'))
+    locator = kwargs.get('locator')
+    locator_type = kwargs.get('locator_type')
+    waiting_for = kwargs.get('waiting_for')
+
     try:
-        return WebDriverWait(driver=page_instance.driver, timeout=timeout, poll_frequency=poll_frequency,
-                             ignored_exceptions=ignored_exceptions).until(condition((kwargs.get('locator'),
-                                                                                     kwargs.get('locator_type'))))
+        wait = web_driver_wait(driver=kwargs.get('driver'), timeout=kwargs.get('timeout', 30),
+                               poll_frequency=kwargs.get('poll_frequency', 0.5),
+                               ignored_exceptions=kwargs.get('ignored_exceptions',
+                                                             (WebDriverException, UnexpectedAlertPresentException)))
+        return wait.until(condition((locator_type, locator)))
     except TimeoutException as exe:
         log.info("Timeout Exception raised: %s", exe)
         log.info("waiting for: %s", waiting_for)
@@ -58,28 +69,20 @@ def web_condition_wait(**kwargs):
     :param kwargs:
     :return:
     """
-    timeout = kwargs.get('timeout', 30)
-    poll_frequency = kwargs.get('sleep_seconds', 0.5)
-    ignored_exceptions = kwargs.get('expected_exceptions', (WebDriverException, UnexpectedAlertPresentException))
-    waiting_for = kwargs.get("waiting_for", '')
-    page_instance = kwargs.get('page')
     condition = expected_conditions(condition=kwargs.get('condition'))
     expected_value = kwargs.get('expected_value')
-    if expected_value:
-        condition = condition(expected_value)
-    else:
-        condition = condition()
+    waiting_for = kwargs.get('waiting_for')
+
     try:
-        if WebDriverWait(driver=page_instance.driver, timeout=timeout, poll_frequency=poll_frequency,
-                         ignored_exceptions=ignored_exceptions).until(condition):
-            pass
+        wait = web_driver_wait(driver=kwargs.get('driver'), timeout=kwargs.get('timeout', 30),
+                               poll_frequency=kwargs.get('poll_frequency', 0.5),
+                               ignored_exceptions=kwargs.get('ignored_exceptions',
+                                                             (WebDriverException, UnexpectedAlertPresentException)))
+        if wait.until(condition(expected_value)):
+            return True
         else:
-            raise Exception
-    except Exception as exe:
-        log.info("Exception raised: %s", exe)
-        log.info("waiting for: %s", waiting_for)
-        raise TimeoutException(msg="waiting for {}".format(waiting_for))
-
-
+            return False
+    except Exception as e:
+        raise TimeoutException(msg=waiting_for+" Not Found")
 def expected_conditions(condition):
     return getattr(EC, condition)
