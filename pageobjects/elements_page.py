@@ -5,9 +5,9 @@ Elements Page Model Designed by Anurag Gupta
 """
 from selenium.webdriver.common.by import By
 from lib.urls.page_details_constants import PageURLs
-from base_class import wait
+from lib.helper import wait
 from base_class.base_class import BasePage
-from base_class.wait import web_element_wait
+from lib.helper.wait import web_element_wait
 
 
 class ElementPage(BasePage):

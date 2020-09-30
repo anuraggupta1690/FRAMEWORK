@@ -1,7 +1,7 @@
 import pytest
 
-from base_class.wait import web_condition_wait, web_element_wait
-from base_class import wait
+from lib.helper.wait import web_condition_wait, web_element_wait
+from lib.helper import wait
 from lib.configurations.environment_variables import ReadConfigFile
 from lib.urls.page_details_constants import PageURLs
 from logger.logger import Logger

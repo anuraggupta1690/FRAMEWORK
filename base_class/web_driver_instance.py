@@ -3,7 +3,7 @@ Web Driver instance module Designed by Anurag Gupta
  :date: Aug 12, 2020
  :author: Anurag Gupta
 """
-from selenium.webdriver import Firefox, Ie, Chrome
+from selenium.webdriver import Firefox, Ie, Chrome, DesiredCapabilities
 from selenium import webdriver
 import path
 from  webdriver_manager import firefox, chrome, microsoft
@@ -32,6 +32,14 @@ class WebDriverInstance:
             option.headless = False
             #option.add_argument("--incognito")
             option.add_argument("--headless")
+
+            # For handle certificate errors
+            #option.add_argument("--allow-running-insecure-content")
+            #option.add_argument("--ignore-certificate-errors")
+
+            # work with firefox as well
+            #cap = DesiredCapabilities.CHROME.copy()
+            #cap["acceptInsecureCerts"] = True
 
             if headless == "True":
                 option.headless = True

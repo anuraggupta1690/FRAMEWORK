@@ -78,11 +78,16 @@ def web_condition_wait(**kwargs):
                                poll_frequency=kwargs.get('poll_frequency', 0.5),
                                ignored_exceptions=kwargs.get('ignored_exceptions',
                                                              (WebDriverException, UnexpectedAlertPresentException)))
-        if wait.until(condition(expected_value)):
-            return True
+        value = False
+        if expected_value:
+            if wait.until(condition(expected_value)):
+                value = True
         else:
-            return False
+            if wait.until(condition()):
+                value = True
+        return value
     except Exception as e:
         raise TimeoutException(msg=waiting_for+" Not Found")
+
 def expected_conditions(condition):
     return getattr(EC, condition)
